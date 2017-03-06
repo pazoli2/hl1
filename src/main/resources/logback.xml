@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true" scanPeriod="3 seconds">
+
+	<contextName>Hl1</contextName>
+
+	<appender name="A1" class="ch.qos.logback.core.ConsoleAppender">
+
+		<encoder>
+			<pattern>
+				%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M\(%line\) - %msg%n
+			</pattern>
+		</encoder>
+		
+	</appender>
+	
+	<root level="ERROR">
+		<appender-ref ref="A1" />
+	</root>
+
+	<logger name="hu.helixlab" level="ALL" />
+	
+</configuration>
